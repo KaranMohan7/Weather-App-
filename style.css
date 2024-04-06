@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    background-image: url(images/image3.jpg);
+    background-size: cover;
+}
+
+.main-container{
+width: 90%;
+max-width: 450px;
+background-color: #BC7FCD;
+margin:80px auto 0;
+padding: 40px 35px;
+border: 3px solid rgba(255, 255, 255, 0.3);
+border-radius: 1.1rem;
+background: rgba(255,255,255,.1);
+backdrop-filter: blur(20px);
+}
+
+.Search-panel{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+gap: 10px;
+}
+
+.Search-panel .inputfield{
+    flex: 1;
+    padding: 14px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+}
+#Search-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    transition: all 0.3s;
+}
+#Search-btn:hover{
+    background-color: black;
+    color: white;
+}
+.imagepanel{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#imagesmain{
+    width: 11rem;
+}
+#temp{
+    font-size: 4rem;
+}
+#cityname{
+    font-size: 3rem;
+    color: white;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    gap: 30px
+}
+
+.imagediv{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+}
+
+.imagediv2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.humidity{
+    width: 2rem;
+    }
+
+.wind{
+    width: 2rem;
+}
+#h-percent{
+ font-size: 1.3rem;;
+}
+#h-para{
+    font-size: 1.3rem;
+}
+#w-percent{
+    font-size: 1.3rem;
+}
+#w-para{
+    font-size: 1.3rem;
+}
+.error{
+    display: none;
+    width: 16rem;
+    border-radius: 5rem;
+    margin: 2rem auto;
+}
+
+@media(max-width: 676px){
+    body{
+       min-height: 30rem;
+    }
+    #Search-btn{
+        width: 40px;
+        height: 40px;
+    }
+    #imagesmain{
+        width: 9rem;
+    }
+    #temp{
+        font-size: 3rem;
+    }
+    #cityname{
+        font-size: 2rem;
+    }
+    #h-para{
+        font-size: 0.7rem;
+    }
+    #h-percent{
+        font-size: 0.7rem;
+    }
+    #w-para{
+        font-size: 0.7rem;
+    }
+    #w-percent{
+        font-size: 0.7rem;
+    }
+}

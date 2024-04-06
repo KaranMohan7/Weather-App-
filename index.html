@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <title>Weather App</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="Search-panel">
+            <input type="text" placeholder="Enter the Location" class="inputfield">
+            <button id="Search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <img src="images/oops.jpg" class="error">
+    <div class="imagepanel">
+        <img src="images/clear.png" id="imagesmain">
+        <h1 id="temp">20°C</h1>
+        <h2 id="cityname">India</h2>
+    <div class="details">
+        <div class="imagediv">
+            <img src="images/humidity.png" class="humidity">
+            <div class="moredetails">
+                <h3 id="h-percent">50%</h3>
+                <p id="h-para">Humidity</p>
+            </div>
+        </div>
+        <div class="imagediv2">
+            <img src="images/wind.png" class="wind">
+            <div class="moredetails2">
+                <h3 id="w-percent">5.36km/h</h3>
+                <p id="w-para">Wind Speed</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
