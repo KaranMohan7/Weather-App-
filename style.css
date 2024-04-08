@@ -13,7 +13,7 @@ body{
 width: 90%;
 max-width: 450px;
 background-color: #BC7FCD;
-margin:80px auto 0;
+margin:90px auto 0;
 padding: 40px 35px;
 border: 3px solid rgba(255, 255, 255, 0.3);
 border-radius: 1.1rem;
@@ -112,7 +112,8 @@ gap: 10px;
 
 @media(max-width: 676px){
     body{
-       min-height: 30rem;
+       min-height: 53rem;
+       overflow: hidden;
     }
     #Search-btn{
         width: 40px;
@@ -138,5 +139,12 @@ gap: 10px;
     }
     #w-percent{
         font-size: 0.7rem;
+    }
+}
+@media(max-width:786px){
+    body{
+        min-height: 75rem;
+        overflow: hidden;
+    
     }
 }
